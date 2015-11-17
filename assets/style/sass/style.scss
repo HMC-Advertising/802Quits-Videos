@@ -86,12 +86,14 @@
 		}
 	}
 }
-.on{
-		border:thick $blue-light solid !important;
+.vidImages{
+	.on{
+			border:thick $blue-light solid !important;
+		}
+	.off{
+			border:thick $lg solid !important;
 	}
-.off{
-		border:thick $lg solid !important;
-}
+}	
 .vidContainer{ 
 	z-index:1;
 	@media only screen and (max-width: 480px){
@@ -242,13 +244,10 @@
 .video-container{
 	width:90%;
 	margin:auto;
-	.links{
-		padding:10px 0;
+	p.links{
+		padding: 0;
+		padding-top: 15px; 
 
-		p{
-			padding:0;
-			margin:0;
-		}
 	}
 }
 

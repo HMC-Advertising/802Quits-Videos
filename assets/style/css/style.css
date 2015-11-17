@@ -98,53 +98,52 @@
   margin-right: 10px;
 }
 
-/* line 89, ../sass/style.scss */
-.on {
+/* line 90, ../sass/style.scss */
+.vidImages .on {
   border: thick #1589b0 solid !important;
 }
-
-/* line 92, ../sass/style.scss */
-.off {
+/* line 93, ../sass/style.scss */
+.vidImages .off {
   border: thick #cccccc solid !important;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .vidContainer {
   z-index: 1;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .vidImages {
   height: 130px;
 }
-/* line 104, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .vidImages .thumbnail {
   background: none;
   border: none;
 }
-/* line 108, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .vidImages button {
   position: absolute;
   z-index: 10000;
   padding: 50px;
 }
-/* line 114, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .vidImages button.slick-prev {
   float: left;
   left: -59px;
   margin-top: -41px !important;
 }
 @media only screen and (max-width: 480px) {
-  /* line 114, ../sass/style.scss */
+  /* line 116, ../sass/style.scss */
   .vidImages button.slick-prev {
     display: none !important;
   }
 }
-/* line 122, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .vidImages button.slick-prev:hover:before {
   color: #1589b0;
 }
-/* line 126, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .vidImages button.slick-prev:before {
   color: #0dbdee;
   opacity: 1.0;
@@ -156,28 +155,28 @@
   content: "\f053" !important;
 }
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-  /* line 126, ../sass/style.scss */
+  /* line 128, ../sass/style.scss */
   .vidImages button.slick-prev:before {
     top: -30px;
   }
 }
-/* line 142, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .vidImages button.slick-next {
   float: right;
   right: -65px;
   margin-top: -41px !important;
 }
 @media only screen and (max-width: 480px) {
-  /* line 142, ../sass/style.scss */
+  /* line 144, ../sass/style.scss */
   .vidImages button.slick-next {
     display: none !important;
   }
 }
-/* line 150, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .vidImages button.slick-next:hover:before {
   color: #1589b0;
 }
-/* line 154, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .vidImages button.slick-next:before {
   color: #0dbdee;
   opacity: 1.0;
@@ -188,12 +187,12 @@
   content: "\f054" !important;
 }
 @media only screen and (min-width: 600px) and (max-width: 1199px) {
-  /* line 154, ../sass/style.scss */
+  /* line 156, ../sass/style.scss */
   .vidImages button.slick-next:before {
     top: -32px;
   }
 }
-/* line 170, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .vidImages ul.slick-dots {
   width: 200px;
   list-style: none;
@@ -202,46 +201,46 @@
   margin-left: 35%;
   margin-top: 0;
 }
-/* line 177, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .vidImages ul.slick-dots li {
   display: inline-block;
 }
-/* line 179, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .vidImages ul.slick-dots li:before {
   content: "" !important;
 }
-/* line 182, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .vidImages ul.slick-dots li button {
   position: relative;
   z-index: 10000;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .vidNav {
   height: 168px;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .vidTitle {
   font-size: 30px;
   font-weight: 800;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
-/* line 218, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .copy_content {
   font-size: 18px;
   line-height: 28px;
   padding-bottom: 10px;
 }
 
-/* line 224, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .video-block {
   border-bottom: #1589b0 20px solid;
   margin-bottom: 30px;
 }
 
-/* line 229, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .amount {
   padding: 10px;
   background: #1589b0;
@@ -253,17 +252,13 @@
   font-size: 20px;
 }
 
-/* line 242, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 .video-container {
   width: 90%;
   margin: auto;
 }
-/* line 245, ../sass/style.scss */
-.video-container .links {
-  padding: 10px 0;
-}
-/* line 248, ../sass/style.scss */
-.video-container .links p {
+/* line 247, ../sass/style.scss */
+.video-container p.links {
   padding: 0;
-  margin: 0;
+  padding-top: 15px;
 }

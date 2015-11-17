@@ -14,18 +14,12 @@
         $amountArray = explode("]", $content);
         $amount = count($amountArray) ;
         $amount = $amount -1;
-         $amount = $amount." Videos";
+        $amount = $amount." Videos";
       
         $output = "";
-
- 
-        
-        $output .='
-           
-        <section class="video-block" id="'.$div_id.'">
-           ';
-         $output .= '<div class="amount">'.$amount.'</div><div class="video-container">';  
-         if(is_mobile()){ 
+        $output .='<section class="video-block" id="'.$div_id.'">';
+        $output .= '<div class="amount">'.$amount.'</div><div class="video-container">';  
+        if(is_mobile()){ 
             $output.="<div style='text-align:center'><strong>Swipe Left or Right</strong></div>";
         }    
         
@@ -41,66 +35,34 @@
             <div class="vidContainer embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"src="https://www.youtube.com/embed/'.$id.'?rel=0" frameborder="0" allowfullscreen>></iframe>
             </div>';
-
-      
-                  
         $output .='
             <div class="contentdcm">
                 <h1 class="vidTitle">'.$title.'</h1>
-                <div class="copy_content">'.$copy.'</div><div class="links">';
-        
-        if($more_link !="#"  ){
-
-            $e ='<p><a href="http://'.$more_link.'" target="_blank" class="more">See More</a><p>';
-
-           // $output .='<a href="'.$video_link.'" class="toVideo">To Video</a></div>';
-        }
-        else{
-            $e="";
-        }
-                $output.= $e.'</div>
-             
-            </div></div></section>';
-            $output .='<script type="text/javascript">
-
- (function ($) {
-        
-        var thumb = $("#'.$div_id.' .imageVideo a");
-        var video = $("#'.$div_id.' iframe");
-        var load = $(".loading");
-        var id, title, content, morer, to, links;
-         
-        thumb.on("click", function(e){
-            e.preventDefault();
-            thumb.find("img").removeClass("on").addClass("off")
-            $(this).find("img").removeClass("off").addClass("on");
-             
-            id = $(this).attr("data-src");
-            morer = $(this).attr("href");
-            content = $(this).attr("data-content");
-            title = $(this).attr("alt");
-            $("#'.$div_id.' .more").attr("href", morer);
-            links = "<p><a href=\'"+morer+"\' target=\'_blank\' class=\'more\'>See More</a></p>";
-
-        
-            $("#'.$div_id.' h1.vidTitle").html(title);
-            $("#'.$div_id.' .contentdcm .copy_content").html(content);
-            video.attr("src", "https://www.youtube.com/embed/"+id+"?rel=0");
-            if(typeof more != "undefined"){
-                $(".links").html(links);
-            }
-            else{
-                $(".links").html("");
-            }
-            
-        })
-        
-         
-    }(jQuery));
-
-            </script>';
-
-      
+                <div class="copy_content">'.$copy.'</div></div></div></section>';
+        $output .='<script type="text/javascript">
+            (function ($) {
+                var thumb = $("#'.$div_id.' .imageVideo a");
+                var video = $("#'.$div_id.' iframe");
+                var load = $(".loading");
+                var id, title, content, morer, to, links;
+                 
+                thumb.on("click", function(e){
+                    e.preventDefault();
+                    thumb.find("img").removeClass("on").addClass("off")
+                    $(this).find("img").removeClass("off").addClass("on");
+                     
+                    id = $(this).attr("data-src");
+                    morer = $(this).attr("href");
+                    content = $(this).attr("data-content");
+                    title = $(this).attr("alt");
+                    
+                    $("#'.$div_id.' h1.vidTitle").html(title);
+                    $("#'.$div_id.' .contentdcm .copy_content").html(content);
+                    video.attr("src", "https://www.youtube.com/embed/"+id+"?rel=0");
+                   
+                })
+            }(jQuery));
+        </script>';
         return $output; 
     }
     add_shortcode("video_container", "video_container");
