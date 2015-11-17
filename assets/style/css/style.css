@@ -1,0 +1,269 @@
+/* line 5, ../sass/style.scss */
+.imageVideo {
+  outline: 0 !important;
+}
+/* line 7, ../sass/style.scss */
+.imageVideo:focus {
+  outline: 0 !important;
+}
+/* line 10, ../sass/style.scss */
+.imageVideo:active {
+  outline: 0 !important;
+}
+/* line 14, ../sass/style.scss */
+.imageVideo a:focus {
+  outline: 0 !important;
+}
+/* line 17, ../sass/style.scss */
+.imageVideo a:active {
+  outline: 0 !important;
+}
+
+/* line 30, ../sass/style.scss */
+.buttons a {
+  position: relative;
+  background: #3db75f;
+  padding: 10px;
+  color: #ffffff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+/* line 37, ../sass/style.scss */
+.buttons a:hover {
+  background: #1589b0;
+}
+/* line 39, ../sass/style.scss */
+.buttons a:hover i {
+  color: #000000;
+}
+/* line 43, ../sass/style.scss */
+.buttons a i {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  color: #ffffff;
+  font-size: 100px;
+}
+/* line 48, ../sass/style.scss */
+.buttons a.left {
+  float: left;
+}
+/* line 51, ../sass/style.scss */
+.buttons a.right {
+  float: right;
+}
+
+/* line 56, ../sass/style.scss */
+.loading {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* line 65, ../sass/style.scss */
+.loading.on {
+  display: block;
+}
+/* line 68, ../sass/style.scss */
+.loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+/* line 78, ../sass/style.scss */
+.contentdcm p {
+  padding-bottom: 20px;
+}
+/* line 81, ../sass/style.scss */
+.contentdcm .buttons {
+  padding: 20px;
+  padding-left: 0;
+}
+/* line 84, ../sass/style.scss */
+.contentdcm .buttons a {
+  margin-right: 10px;
+}
+
+/* line 89, ../sass/style.scss */
+.on {
+  border: thick #1589b0 solid !important;
+}
+
+/* line 92, ../sass/style.scss */
+.off {
+  border: thick #cccccc solid !important;
+}
+
+/* line 95, ../sass/style.scss */
+.vidContainer {
+  z-index: 1;
+}
+
+/* line 100, ../sass/style.scss */
+.vidImages {
+  height: 130px;
+}
+/* line 104, ../sass/style.scss */
+.vidImages .thumbnail {
+  background: none;
+  border: none;
+}
+/* line 108, ../sass/style.scss */
+.vidImages button {
+  position: absolute;
+  z-index: 10000;
+  padding: 50px;
+}
+/* line 114, ../sass/style.scss */
+.vidImages button.slick-prev {
+  float: left;
+  left: -59px;
+  margin-top: -41px !important;
+}
+@media only screen and (max-width: 480px) {
+  /* line 114, ../sass/style.scss */
+  .vidImages button.slick-prev {
+    display: none !important;
+  }
+}
+/* line 122, ../sass/style.scss */
+.vidImages button.slick-prev:hover:before {
+  color: #1589b0;
+}
+/* line 126, ../sass/style.scss */
+.vidImages button.slick-prev:before {
+  color: #0dbdee;
+  opacity: 1.0;
+  margin-left: -37px;
+  top: -14px;
+  position: relative;
+  font-family: FontAwesome !important;
+  font-size: 40px;
+  content: "\f053" !important;
+}
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  /* line 126, ../sass/style.scss */
+  .vidImages button.slick-prev:before {
+    top: -30px;
+  }
+}
+/* line 142, ../sass/style.scss */
+.vidImages button.slick-next {
+  float: right;
+  right: -65px;
+  margin-top: -41px !important;
+}
+@media only screen and (max-width: 480px) {
+  /* line 142, ../sass/style.scss */
+  .vidImages button.slick-next {
+    display: none !important;
+  }
+}
+/* line 150, ../sass/style.scss */
+.vidImages button.slick-next:hover:before {
+  color: #1589b0;
+}
+/* line 154, ../sass/style.scss */
+.vidImages button.slick-next:before {
+  color: #0dbdee;
+  opacity: 1.0;
+  position: relative;
+  top: -16px;
+  font-family: FontAwesome !important;
+  font-size: 40px;
+  content: "\f054" !important;
+}
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  /* line 154, ../sass/style.scss */
+  .vidImages button.slick-next:before {
+    top: -32px;
+  }
+}
+/* line 170, ../sass/style.scss */
+.vidImages ul.slick-dots {
+  width: 200px;
+  list-style: none;
+  margin: auto;
+  display: inline-block;
+  margin-left: 35%;
+  margin-top: 0;
+}
+/* line 177, ../sass/style.scss */
+.vidImages ul.slick-dots li {
+  display: inline-block;
+}
+/* line 179, ../sass/style.scss */
+.vidImages ul.slick-dots li:before {
+  content: "" !important;
+}
+/* line 182, ../sass/style.scss */
+.vidImages ul.slick-dots li button {
+  position: relative;
+  z-index: 10000;
+}
+
+/* line 195, ../sass/style.scss */
+.vidNav {
+  height: 168px;
+}
+
+/* line 199, ../sass/style.scss */
+.vidTitle {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+/* line 218, ../sass/style.scss */
+.copy_content {
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+
+/* line 224, ../sass/style.scss */
+.video-block {
+  border-bottom: #1589b0 20px solid;
+  margin-bottom: 30px;
+}
+
+/* line 229, ../sass/style.scss */
+.amount {
+  padding: 10px;
+  background: #1589b0;
+  width: auto;
+  display: block;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* line 242, ../sass/style.scss */
+.video-container {
+  width: 90%;
+  margin: auto;
+}
+/* line 245, ../sass/style.scss */
+.video-container .links {
+  padding: 10px 0;
+}
+/* line 248, ../sass/style.scss */
+.video-container .links p {
+  padding: 0;
+  margin: 0;
+}
