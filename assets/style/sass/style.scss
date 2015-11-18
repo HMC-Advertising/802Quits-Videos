@@ -91,8 +91,8 @@
 			border:thick $blue-light solid !important;
 		}
 	.off{
-			border:thick $lg solid !important;
-	}
+			border:thick $w solid !important;
+	} 
 }	
 .vidContainer{ 
 	z-index:1;
@@ -220,7 +220,7 @@
 .copy_content{
 	font-size:18px;
 	line-height: 28px;
-	padding-bottom:10px;
+	padding-bottom:30px;
 }
 
 .video-block{

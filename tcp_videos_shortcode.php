@@ -105,3 +105,16 @@
     }
     add_shortcode("video_dia" ,"videos_shortcode");
 
+    /*[video_container copy="" title="" id="" ]
+
+[video_dia copy="" first_vid="yes" title="" id=""]
+
+[video_dia copy="" title="" id=""]
+
+[video_dia copy="" title="" id=""]
+
+[video_dia copy="" title="" id=""]
+
+[/video_container]
+*/
+

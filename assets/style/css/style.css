@@ -104,7 +104,7 @@
 }
 /* line 93, ../sass/style.scss */
 .vidImages .off {
-  border: thick #cccccc solid !important;
+  border: thick #ffffff solid !important;
 }
 
 /* line 97, ../sass/style.scss */
@@ -231,7 +231,7 @@
 .copy_content {
   font-size: 18px;
   line-height: 28px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 /* line 226, ../sass/style.scss */
