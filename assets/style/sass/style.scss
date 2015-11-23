@@ -4,6 +4,10 @@
 
 .imageVideo {
 	outline:0 !important;
+	overflow: hidden;
+    height: 141px !important;
+    width: 236px !Important;
+	
 	&:focus{
 		outline:0 !important;
 	}
@@ -22,6 +26,18 @@
 				
 			}
 		}
+		img{
+			width: 270px;
+		    margin-left: -28px;
+    		margin-top: -14px;
+		    max-width: none !important;
+		}
+	}
+	&.on{
+		border:thick $blue-light solid !important;
+	}
+	&.off{
+		border:thick $white solid !important;
 	}
 }
 
@@ -87,12 +103,7 @@
 	}
 }
 .vidImages{
-	.on{
-			border:thick $blue-light solid !important;
-		}
-	.off{
-			border:thick $w solid !important;
-	} 
+	
 }	
 .vidContainer{ 
 	z-index:1;

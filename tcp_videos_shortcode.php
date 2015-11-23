@@ -48,8 +48,8 @@
                  
                 thumb.on("click", function(e){
                     e.preventDefault();
-                    thumb.find("img").removeClass("on").addClass("off")
-                    $(this).find("img").removeClass("off").addClass("on");
+                    thumb.parent().removeClass("on").addClass("off")
+                    $(this).parent().removeClass("off").addClass("on");
                      
                     id = $(this).attr("data-src");
                     morer = $(this).attr("href");
@@ -95,8 +95,8 @@
         } 
 
         $output = "";
-        $output .='  <div class="imageVideo">
-            <a href="'.$more_link.'" data-loading="image1" data-src="'.$id.'" alt="'.$title.'" data-content="'.$copy.'" class="image thumbnail"'.$m.'><img src="http://img.youtube.com/vi/'.$id.'/mqdefault.jpg" class="'.$first.'"></a></div>';
+        $output .='  <div class="imageVideo '.$first.'">
+            <a href="'.$more_link.'" data-loading="image1" data-src="'.$id.'" alt="'.$title.'" data-content="'.$copy.'" class="image thumbnail"'.$m.'><img src="http://img.youtube.com/vi/'.$id.'/mqdefault.jpg"></a></div>';
 
       
         return $output; 
